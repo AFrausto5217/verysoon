@@ -17,7 +17,7 @@
 #container {
 
     background-color: white;
-    width: 1200px;
+    width: 100%;
     height: 1000px;
     margin: auto;
 
@@ -33,26 +33,54 @@
     height: 10%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    
 }
 
+/*
 #header img {
-    width: 90%;
-    height: 80%;
+    margin: 0;
+    padding-top: 15px;
+    width: 80%;
+    height: 55%;
+        
+}
+*/
+
+#header div {
+    margin: 0;
+    padding: 0;
+    height: 78%;
+    align-content: center;
+
 }
 
 .enc1 {
-    height: 100%;
+    align-items: center;
 }
 
-.enc2 {
-    height: 100%;
+#header .enc1 img {
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 80%;
+    height: 55%;
+        
 }
 
 .enc3 {
-    height: 100%;
     text-align: right;
 
 }
+
+#header .enc3 img {
+    margin: 0;
+    padding-top: 15px;
+    padding-right: 15px;
+    width: 80%;
+    height: 55%;
+        
+}
+
 .blackline {
     width: 100%;
     height: 1%;
@@ -82,8 +110,11 @@
 }
 
 #main div {
+    margin: 0;
+    border: 0;
     width: 100%;
     height: 100%;
+    align-content: center;
     text-align: center;
     
     
@@ -91,10 +122,10 @@
 
 #main img {
     
-    width: calc(100% - 200px);
-    height: calc(100% - 200px);
+    width: calc(100% - 300px);
+    height: calc(100% - 300px);
     border-radius: 7%;
-    margin: 100px;
+    margin: 150px;
     
 }
 
@@ -132,7 +163,7 @@
     #container {
 
         background-color: white;
-        width: 1200px;
+        width: 100%;
         margin: auto;
     
 
@@ -145,7 +176,7 @@
 @media (min-width: 800px) and (max-width: 1199px) {
     #container {
 
-        background-color: brown;
+        background-color: white;
         width: 800px;
         margin: auto;
 
@@ -161,7 +192,7 @@
 
 @media (min-width: 400px) and (max-width: 799px) {
     #container {
-        background-color: pink;
+        background-color: white;
         width: 600px;
         margin: auto;
     }
@@ -171,5 +202,12 @@
         height: 60%;
     }
 
+    #footer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, fr);
+    
+        
+    }
+    
 
 }
